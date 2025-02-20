@@ -11,7 +11,7 @@ cd backend
 
 2. Install dependencies:
 ```bash
-npm install express cors typescript @types/express @types/cors ts-node-dev
+npm install
 ```
 
 3. Create a `tsconfig.json` file with the following content:
@@ -35,12 +35,12 @@ npm install express cors typescript @types/express @types/cors ts-node-dev
 
 1. Navigate to the frontend directory:
 ```bash
-cd frontend
+cd ../frontend
 ```
 
 2. Install dependencies:
 ```bash
-npm install @mui/material
+npm install
 ```
 
 ## Running the Application
@@ -49,7 +49,7 @@ npm install @mui/material
 
 1. Navigate to the backend directory:
 ```bash
-cd backend
+cd ../backend
 ```
 
 2. Start the backend server (from the backend directory):
@@ -61,7 +61,7 @@ npm run dev
 
 1. Navigate to the frontend directory:
 ```bash
-cd frontend
+cd ../frontend
 ```
 
 2. In a new terminal, start the frontend (from the frontend directory):
