@@ -40,7 +40,7 @@ cd frontend
 
 2. Install dependencies:
 ```bash
-npm install express cors typescript @types/express @types/cors ts-node-dev
+npm install @mui/material
 ```
 
 ## Running the Application
