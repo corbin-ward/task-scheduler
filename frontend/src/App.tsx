@@ -1,3 +1,4 @@
+// src/App.tsx
 import React, { useState, useEffect, useCallback } from 'react';
 import {
   Container,
@@ -177,7 +178,12 @@ function App() {
             <TableBody>
               {outputs.map((output, index) => (
                 <TableRow key={index}>
-                  <TableCell>{new Date(output.timestamp).toLocaleTimeString()}</TableCell>
+                  <TableCell>
+                    {new Date(output.timestamp).toISOString()
+                      .replace('T', ' ')
+                      .slice(0, -1)  // Remove the 'Z'
+                      .split('.')[0] + '.' + new Date(output.timestamp).getMilliseconds().toString().padStart(3, '0')}
+                  </TableCell>
                   <TableCell>{output.taskId}</TableCell>
                   <TableCell>{output.output}</TableCell>
                 </TableRow>
